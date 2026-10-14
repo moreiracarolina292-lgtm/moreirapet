@@ -1,0 +1,110 @@
+
+.pagamento-container {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 30px;
+}
+
+.pagamento-container h1 {
+    text-align: center;
+    color: #20a5cc;
+    margin-bottom: 10px;
+}
+
+.subtitulo {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #666;
+}
+
+.resumo {
+    background: #eaf7fb;
+    border: 1px solid #20a5cc;
+    border-radius: 15px;
+    padding: 22px;
+    margin-bottom: 25px;
+}
+
+.resumo h2,
+#form-pagamento h2 {
+    margin-bottom: 18px;
+    color: #236c83;
+}
+
+.resumo p {
+    margin: 12px 0;
+}
+
+.total {
+    font-size: 22px;
+    color: #1686a8;
+}
+
+#form-pagamento {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#form-pagamento label {
+    font-weight: bold;
+}
+
+#form-pagamento input[type="text"],
+#form-pagamento input[type="email"] {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #ccc;
+    border-radius: 9px;
+    margin-bottom: 10px;
+}
+
+.opcao {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.opcao:hover {
+    background: #eaf7fb;
+    border-color: #20a5cc;
+}
+
+.opcao input {
+    width: 18px;
+    height: 18px;
+    accent-color: #20a5cc;
+}
+
+.botao-pagar {
+    margin-top: 15px;
+    padding: 16px;
+    background: #20a5cc;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.botao-pagar:hover {
+    background: #1686a8;
+}
+
+.mensagem {
+    color: #236c58;
+    font-weight: bold;
+    margin-top: 12px;
+}
+
+@media (max-width: 600px) {
+    .pagamento-container {
+        padding: 20px;
+        margin: 20px auto;
+    }
+}

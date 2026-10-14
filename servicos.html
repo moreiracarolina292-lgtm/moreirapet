@@ -1,0 +1,223 @@
+[
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviços | Mundo Pet</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- CABEÇALHO -->
+    <header class="topo">
+        <a href="index.html" class="logo">🐾 Mundo Pet</a>
+
+        <form class="busca" action="produtos.html">
+            <input type="search" name="q"
+                   placeholder="O que você procura?">
+            <button type="submit">🔍</button>
+        </form>
+
+        <a href="produtos.html" class="carrinho">
+            🛒 Produtos
+        </a>
+    </header>
+
+    <!-- MENU -->
+    <nav class="menu">
+        <a href="index.html">INÍCIO</a>
+      
+    </nav>
+
+    <!-- APRESENTAÇÃO -->
+    <main class="pagina-servicos">
+
+        <section class="banner-servicos">
+            <div>
+                <p class="subtitulo-servicos">CUIDADO, CARINHO E DIVERSÃO</p>
+                <h1>Os melhores cuidados para seu pet!</h1>
+                <p>Seu melhor amigo merece atenção especial.</p>
+
+                <a href="#nossos-servicos" class="botao">
+                    CONHEÇA NOSSOS SERVIÇOS
+                </a>
+            </div>
+
+            <img
+                src="https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?auto=format&fit=crop&w=800&q=80"
+                alt="Cachorro recebendo cuidados">
+        </section>
+
+        <!-- SERVIÇOS -->
+        <section id="nossos-servicos" class="lista-servicos">
+
+            <h2>NOSSOS SERVIÇOS</h2>
+            <p class="texto-servicos">
+                Tudo para manter seu companheiro feliz, limpo e saudável!
+            </p>
+
+            <div class="grade-servicos">
+
+                <article class="card-servico">
+                    <img
+                        src="https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?auto=format&fit=crop&w=600&q=80"
+                        alt="Banho para cachorro">
+
+                    <div class="info-servico">
+                        <h3>🛁 Banho</h3>
+                        <p>Higiene e cuidado para deixar seu pet cheiroso e limpinho.</p>
+                        <p class="preco-servico">A partir de R$ 35,00</p>
+
+                        <a href="contato.html?servico=Banho"
+                           class="botao-servico">
+                            AGENDAR
+                        </a>
+                    </div>
+                </article>
+
+                <article class="card-servico">
+                    <img
+                        src="https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?auto=format&fit=crop&w=600&q=80"
+                        alt="Cuidado com a pelagem do cachorro">
+
+                    <div class="info-servico">
+                        <h3>✂️ Tosa</h3>
+                        <p>Cuidado com a pelagem para o conforto do seu amigo.</p>
+                        <p class="preco-servico">A partir de R$ 45,00</p>
+
+                        <a href="contato.html?servico=Tosa"
+                           class="botao-servico">
+                            AGENDAR
+                        </a>
+                    </div>
+                </article>
+
+                <article class="card-servico">
+                    <img
+                        src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?auto=format&fit=crop&w=600&q=80"
+                        alt="Cuidados com animal de estimação">
+
+                    <div class="info-servico">
+                        <h3>🐾 Corte de unhas</h3>
+                        <p>Um cuidado delicado para as patinhas do seu pet.</p>
+                        <p class="preco-servico">A partir de R$ 15,00</p>
+
+                        <a href="contato.html?servico=Corte%20de%20unhas"
+                           class="botao-servico">
+                            AGENDAR
+                        </a>
+                    </div>
+                </article>
+
+                <article class="card-servico">
+                    <img
+                        src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&w=600&q=80"
+                        alt="Cães felizes">
+
+                    <div class="info-servico">
+                        <h3>💚 Pacote completo</h3>
+                        <p>Uma combinação de cuidados para seu melhor amigo.</p>
+                        <p class="preco-servico">A partir de R$ 70,00</p>
+
+                        <a href="contato.html?servico=Pacote%20completo"
+                           class="botao-servico">
+                            AGENDAR
+                        </a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- INFORMAÇÕES -->
+        <section class="aviso-servicos">
+            <h2>Seu pet merece esse carinho!</h2>
+            <p>Entre em contato conosco para consultar horários e valores.</p>
+            <a href="contato.html" class="botao">
+                FALE CONOSCO
+            </a>
+        </section>
+
+    </main>
+
+<section class="agendamento" id="agendamento">
+    <h2>📅 Agende um horário</h2>
+    <p>Escolha o melhor dia para cuidar do seu melhor amigo!</p>
+
+    <form id="form-agendamento">
+
+        <label for="servico">Serviço desejado</label>
+        <select id="servico" required>
+            <option value="">Selecione um serviço</option>
+            <option>Banho</option>
+            <option>Tosa</option>
+            <option>Corte de unhas</option>
+            <option>Pacote completo</option>
+        </select>
+
+        <label for="nome-pet">Nome do pet</label>
+        <input type="text" id="nome-pet"
+               placeholder="Nome do seu pet" required>
+
+        <label for="data">Escolha a data</label>
+        <input type="date" id="data" required>
+
+        <label for="horario">Escolha o horário</label>
+        <select id="horario" required>
+            <option value="">Selecione</option>
+            <option>09:00</option>
+            <option>10:00</option>
+            <option>11:00</option>
+            <option>14:00</option>
+            <option>15:00</option>
+            <option>16:00</option>
+        </select>
+
+        <label for="tutor">Seu nome</label>
+        <input type="text" id="tutor"
+               placeholder="Nome do responsável" required>
+
+        <button type="submit" class="botao-servico">
+            SOLICITAR AGENDAMENTO
+        </button>
+
+        <p id="confirmacao"></p>
+    </form>
+</section>
+
+<script>
+    const campoData = document.getElementById("data");
+
+    const hoje = new Date();
+    const ano = hoje.getFullYear();
+    const mes = String(hoje.getMonth() + 1).padStart(2, "0");
+    const dia = String(hoje.getDate()).padStart(2, "0");
+
+    campoData.min = `${ano}-${mes}-${dia}`;
+
+    document.getElementById("form-agendamento")
+        .addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            const servico = document.getElementById("servico").value;
+            const pet = document.getElementById("nome-pet").value;
+            const data = campoData.value;
+            const horario = document.getElementById("horario").value;
+            const tutor = document.getElementById("tutor").value;
+
+            const dataFormatada = data.split("-").reverse().join("/");
+
+            document.getElementById("confirmacao").textContent =
+                `Solicitação de demonstração: ${servico} para ${pet}, ` +
+                `dia ${dataFormatada}, às ${horario}. Responsável: ${tutor}.`;
+        });
+</script>
+
+    <footer>
+        <p>© 2026 Mundo Pet | Feito com carinho 🐾</p>
+    </footer>
+
+</body>
+</html>
+]
